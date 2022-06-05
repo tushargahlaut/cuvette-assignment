@@ -1,0 +1,54 @@
+
+.logo{
+position: absolute;
+width: 120px;
+height: 29.24px;
+left: 40px;
+top: 28px;
+
+}
+
+.topbar__profile{
+    display:flex;
+    position: absolute;
+    margin-left: 80%;
+    margin-top:21px;
+    border: 1px solid #EBF0F5;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.username{
+    width: 108px;
+    height: 28px;
+    /* position: absolute; */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+    margin-left: 10px;
+    display: inline;
+    letter-spacing: -0.02em;
+    margin-top: -15px;
+    color: #1E272E;
+}
+    
+.img{
+width: 26px;
+height: 26px;
+border-radius: 37.32px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.horizontal__divide{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    top: 88px;
+    background:  #EBF0F5;
+}

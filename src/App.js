@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import TopNavbar from './Components/TopNavbar/TopNavbar';
+import Sidebar from "./Components/SideBar/Sidebar";
 import './App.css';
+import SyllabusWiseAnalysis from './Components/SyllabusWiseAnalysis/SyllabusWiseAnalysis';
+import QuestionAnalysis from './Components/QuestionAnalysis/QuestionAnalysis';
+import ComparisonGraph from './Components/ComparisonGraph/ComparisoGraph';
+import QuickStatistics from './Components/QuickStatistics/QuickStatistics';
+import SkillTest from './Components/SkillTest/SkillTest';
+import Header from './Components/Header/Header';
+import { useState } from 'react';
+
 
 function App() {
+  const [percentile,setPercentile] = useState(37);
+  const [correctAnswers,setCorrectAnswers] = useState(7);
+  const [rank,setRank]=useState(12890);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopNavbar/>
+      <Sidebar/>
+      <Header/>
+      <SyllabusWiseAnalysis/>
+      <QuestionAnalysis setCorrectAnswers={setCorrectAnswers} correctAnswers={correctAnswers}/>
+      <SkillTest correctAnswers={correctAnswers} percentile={percentile} rank={rank} setCorrectAnswers={setCorrectAnswers} setPercentile={setPercentile} setRank={setRank}/>
+      <QuickStatistics correctAnswers={correctAnswers} percentile={percentile} rank={rank}/>
+      <ComparisonGraph percentile={percentile}/>
     </div>
   );
 }

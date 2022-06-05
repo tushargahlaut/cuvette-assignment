@@ -1,0 +1,136 @@
+.sidebar__line{
+position: absolute;
+width: 1px;
+height: 980px;
+left: 226px;
+top: 88px;
+background: #EBF0F5;
+}
+
+.frame{
+    position: absolute;
+width: 186px;
+height: 316px;
+left: 0px;
+margin-top: 128px;
+}
+
+.pages{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+position: absolute;
+height: 28px;
+left: 21.51%;
+right: 19.35%;
+top: calc(50% - 28px/2 - 140px);
+border-radius: 5px;
+}
+
+.skilltest__active{
+    position: absolute;
+width: 186px;
+height: 50px;
+left: 0px;
+top: 58px;
+margin-left: -10px;
+background: #F7F8FA;
+border-radius: 0px 100px 100px 0px;
+transition: all .2s ease-in-out;
+}
+
+.skilltest__active:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.skilltest__text{
+    width: 65px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+letter-spacing: -0.02em;
+
+color: #445EE2;
+flex: none;
+order: 1;
+flex-grow: 0;
+/* position: absolute; */
+margin-top: -6px;
+margin-left:30px;
+}
+
+.dashboard{
+width: 81px;
+height: 28px;
+display: flex;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #566474;
+flex: none;
+order: 1;
+flex-grow: 0;
+transition: all .2s ease-in-out;
+margin-left: -100px;
+}
+
+.dashboard:hover{
+    color:#445EE2;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.dashboard__svg{
+    margin-top: 18px;
+    padding-right: 19px;
+}
+
+.skill__svg{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.internships{
+    margin-top: 300px;
+    width: 81px;
+height: 28px;
+display: flex;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #566474;
+flex: none;
+order: 1;
+flex-grow: 0;
+transition: all .2s ease-in-out;
+margin-left: 0px;
+margin-top: 210px;
+}
+
+.internships__svg{
+    margin-top: 19px;
+    padding-right: 19px;
+}
+
+.internships:hover{
+    color:#445EE2;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
